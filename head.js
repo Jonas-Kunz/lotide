@@ -14,9 +14,7 @@ assertEqual("round","round");
 assertEqual(1, "10");
 
 const head = function(arr) {
-  let headElm = arr[0];
-  console.log(headElm);
-  return headElm;
+  return arr[0];
 };
 
 assertEqual(head([5,6,7]),5);
