@@ -7,12 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-/* Test code
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("round","round");
-assertEqual(1, "10");
-*/
+
 
 
 
@@ -22,8 +17,18 @@ const tail = function(arr) {
   return tailArr;
 };
 
-//assertEqual(tail([1,2,3,4,5]), [2,3,4,5]);
-//assertEqual(tail([1,2,3,4,5]), [1,2,3,4,5]);
+//test if one element array
+const singleArr = tail(["test"]);
+assertEqual(singleArr.length, 0);
+
+//test empty
+const mt = tail([]);
+assertEqual(mt.length, 0);
+
+//test if mutate:
+const orgArr = ["yo","ho","ho"];
+tail(orgArr);
+assertEqual(orgArr.length, 3);
 
 const words = tail(["Hahahah", "Bingo Bongo", "Dads"]);
 assertEqual(words.length, 2);
