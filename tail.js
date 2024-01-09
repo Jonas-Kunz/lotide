@@ -22,13 +22,13 @@ const tail = function(arr) {
   return tailArr;
 };
 
-assertEqual(tail([1,2,3,4,5]), [2,3,4,5]);
-assertEqual(tail([1,2,3,4,5]), [1,2,3,4,5]);
+//assertEqual(tail([1,2,3,4,5]), [2,3,4,5]);
+//assertEqual(tail([1,2,3,4,5]), [1,2,3,4,5]);
 
-const words = ["Hahahah", "Bingo Bong", "Dads"];
-assertEqual(words.length, 3);
-tail(words);
+const words = tail(["Hahahah", "Bingo Bongo", "Dads"]);
+assertEqual(words.length, 2);
+assertEqual(words[0], "Bingo Bongo");
+assertEqual(words[1], "Dads");
 
-console.log(tail([]));
-console.log(tail([1]));
+
 
