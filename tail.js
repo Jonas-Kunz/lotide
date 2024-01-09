@@ -13,8 +13,7 @@ const assertEqual = function(actual, expected) {
 
 // returns all elemnets but the first:
 const tail = function(arr) {
-  let tailArr = arr.slice(1);
-  return tailArr;
+  return arr.slice(1);
 };
 
 //test if one element array
