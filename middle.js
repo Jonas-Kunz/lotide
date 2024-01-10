@@ -30,12 +30,9 @@ const assertArraysEqual = function(arr1, arr2) {
 // for array with one or two elements return empty array
 // for array with odd num of elements return single middle element
 // for even array return two middle elements
-// checks if oddOrEven and outputs odd if odd can be switched with changing the 1 to a 2
-const oddOrEven = function(x) {
-  return (x & 1) ? true : false;
-};
+
    
-//console.log(oddOrEven(5));
+
 //checks for middle element(s) of array
 const middle = function(array) {
   // makes sure array is more than 2 and returns an empty array if NOT
@@ -45,7 +42,7 @@ const middle = function(array) {
   //stores my middle elements
   let resultArr = [];
   // checks if array length is odd
-  if (oddOrEven(array.length)) {
+  if (array.length % 2 !== 0) {
     // if odd pushes the element at the index array.length/2 rounded down into resultArr
     resultArr.push(array[Math.floor(array.length / 2)]);
   } else {
