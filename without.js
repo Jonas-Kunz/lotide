@@ -1,4 +1,4 @@
-// eqArrays
+// eqArrays fort
 
 const eqArrays = function(arr1, arr2) {
 
@@ -17,7 +17,7 @@ const eqArrays = function(arr1, arr2) {
 };
 
 
-// asserArraysEqual
+// asserArraysEqual for tests
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
@@ -34,29 +34,33 @@ const assertArraysEqual = function(arr1, arr2) {
 // so i need to loop through source and pop any not in items to remove and return pop array?
 
 const without = function(source, itemsToRemove) {
-
+  // array to store pushed values
   let  popArr = [];
-
+  // loops through all items in source
   for (const item of source) {
-
+    // include checks if each item in source is in itemsToRemove
     if (!itemsToRemove.includes(item)) {
+      // pushes item to array if NOT in itemsToRemove
       popArr.push(item);
     }
     
   }
-
+  //return
   return popArr;
 
 };
 
+// test cases and store answer
 const result1 = without([1, 2, 3], [1]); // => [2, 3]
 const result2 = without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]
 const result3 = without(["1",2,"3"],[5]); // => ["1",2,"3"]
 
+// checks if above tests are correct
 assertArraysEqual(result1, [2,3]);
 assertArraysEqual(result2, ["1","2"]);
 assertArraysEqual(result3, ["1",2,"3"]);
 
+// checks if source array has been altered
 const words = ["Howdy", "World", "Dog"];
 without(words, ["World"]);
 assertArraysEqual(words, ["Howdy", "World", "Dog"]);
