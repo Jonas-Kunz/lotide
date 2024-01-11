@@ -17,7 +17,7 @@ const countLetters = function(stringIn) {
   // new object to put results in
   let results = {};
   //uses RegEx magic i found on stackoveflow to remove all spaces in string
-  let joinedString = stringIn//.replace(/\s/g, "");
+  let joinedString = stringIn.replace(/\s/g, "");
   // loops through each letter in new string
   for (const letter of joinedString) {
     // checks if results object has a key letter
