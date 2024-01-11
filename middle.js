@@ -32,7 +32,7 @@ const assertArraysEqual = function(arr1, arr2) {
 // for even array return two middle elements
 
    
-
+//console.log(oddOrEven(5));
 //checks for middle element(s) of array
 const middle = function(array) {
   // makes sure array is more than 2 and returns an empty array if NOT
