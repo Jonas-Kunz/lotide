@@ -16,8 +16,6 @@ const assertEqual = function(actual, expected) {
 
 // function findKeyByValue
 const findKeyByValue = function(objectIn, valueIn) {
-  // stores result so i can continue the loop
-  let result = "";
   // loops through keys in objectIn
   for (let key in objectIn) {
     //stores the key at objectIn[key] to a variable so i can use it
@@ -25,11 +23,11 @@ const findKeyByValue = function(objectIn, valueIn) {
     //checks if keyValue mathces valueIn and alters result
     if (keyValue === valueIn) {
       //console.log("Key:" + key)
-      return key 
+      return key;
     }
 
   }
-  
+
   return undefined;
   
 };
