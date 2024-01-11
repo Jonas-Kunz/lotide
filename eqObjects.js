@@ -63,8 +63,8 @@ let result1 = eqObjects(shirtObject , anotherShirtObject); // => true
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 let result2 = (eqObjects(shirtObject , longSleeveShirtObject)); // => false
 
-//assertEqual(result1, true);
-//assertEqual(result2, false);
+assertEqual(result1, true);
+assertEqual(result2, false);
 
 
 // array tests
@@ -75,7 +75,7 @@ let result3 = eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject); 
 const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
 let result4 = eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject); // => false
 
-//assertEqual(result3, true);
-//assertEqual(result4, false);
+assertEqual(result3, false);
+assertEqual(result4, false);
 
-console.log(eqObjects({a: "2", b: "3"},{a: "2", b: "3"}))
+console.log(eqObjects({a: [1,3,4], b: "3"},{a: "2", b: "3"}))
