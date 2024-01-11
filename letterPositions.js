@@ -67,7 +67,7 @@ const letterPositions = function(sentance) {
 let result1 = (letterPositions("12133"));// =>{'1':[0,2], '2': [1], '3': [3,4]}
 assertArraysEqual(result1["1"], [0,2]);
 assertArraysEqual(result1["2"], [1]);
-assertArraysEqual(result1[3], [3,4]);
+assertArraysEqual(result1["3"], [3,4]);
 
 // tests no string
 let result2 = (letterPositions(""));//=> {}
