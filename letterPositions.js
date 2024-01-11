@@ -38,23 +38,24 @@ const letterPositions = function(sentance) {
 
   const results = {};
 
-  //uses RegEx magic i found on stackoverflow to remove all spaces in string
-  let joinedString = sentance.replace(/\s/g, "");
   // loops through each letter in new string
-  for (let i = 0; i < joinedString.length; i++) {
+  for (let i = 0; i < sentance.length; i++) {
     
-    const letter = joinedString[i];
+    const letter = sentance[i];
 
-    if (!results[letter]) {
+    if (letter !== " ") {
+      if (!results[letter]) {
 
-      results[letter] = [i];
+        results[letter] = [i];
 
-    } else {
+      } else {
 
-      results[letter].push(i);
+        results[letter].push(i);
       
-    }
+      }
 
+    }
+    
   }
 
 
@@ -74,9 +75,9 @@ assertArraysEqual(result2,{});
 console.log(result2);
 
 //test spaces removed
-let result3 = (letterPositions("12 133"));// =>{'1':[0,2], '2': [1], '3': [3,4]}
-assertArraysEqual(result3["1"], [0,2]);
+let result3 = (letterPositions("12 133"));// =>{'1':[0,3], '2': [1], '3': [4,5]}
+assertArraysEqual(result3["1"], [0,3]);
 assertArraysEqual(result3["2"], [1]);
-assertArraysEqual(result3[3], [3,4]);
+assertArraysEqual(result3["3"], [4,5]);
 
 
