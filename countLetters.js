@@ -48,5 +48,10 @@ assertEqual(result2["a"], undefined);
 assertEqual(result2["b"], undefined );
 assertEqual(result2["c"], undefined);
 
+const result3 = countLetters("aA bb cb");
+assertEqual(result3["a"], 1);
+assertEqual(result3["b"], 3);
+assertEqual(result3["c"], 1);
+assertEqual(result3["A"], 1)
 
 
