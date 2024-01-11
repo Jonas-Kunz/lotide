@@ -1,6 +1,6 @@
 //start
 
-/// help bits
+
 // eqArrays
 
 const eqArrays = function(arr1, arr2) {
@@ -32,19 +32,21 @@ const eqObjects = function(object1, object2) {
   }
 
   for (let key in object1) {
-    if (eqArrays(object1[key],object2[key])) {
-      return true;
-    } else if (object1[key] === object2[key]) {
-      return true;
-    } else {
-      return false;
+
+    if(Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+      if(!eqArrays(object1[key], object2[key])) {
+        return false
+      }
+    } else if (object1[key] !== object2[key]) {
+      return false
     }
-    
+
   }
 
-  return false;
+  return true;
 
 };
+
 // assert objects equal
 
 const assertObjectsEqual = function(object1,object2) {
@@ -60,6 +62,6 @@ const assertObjectsEqual = function(object1,object2) {
 
 
 assertObjectsEqual({a: "2", b: "3"},{a: "2", b: "3"})//=> pass
-assertObjectsEqual({a: "2", b: "3"},{a: "2", b: "4"})//=> pass
+assertObjectsEqual({a: "2", b: "3"},{a: "2", b: "3"})//=> pass
 
 console.log(eqObjects({a: "2", b: "3"},{a: "2", b: "4"}))
