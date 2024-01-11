@@ -23,18 +23,14 @@ const findKeyByValue = function(objectIn, valueIn) {
     //stores the key at objectIn[key] to a variable so i can use it
     let keyValue = objectIn[key];
     //checks if keyValue mathces valueIn and alters result
-    if (keyValue !== valueIn) {
+    if (keyValue === valueIn) {
       //console.log("Key:" + key)
-      result = undefined;
-      continue;
-    } else if (keyValue === valueIn) {
-      //console.log("Key there" + key)
-      return key;
+      return key 
     }
-    
-  }
 
-  return result;
+  }
+  
+  return undefined;
   
 };
 
