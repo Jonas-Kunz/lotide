@@ -29,7 +29,7 @@ const findKeyByValue = function(objectIn, valueIn) {
       continue;
     } else if (keyValue === valueIn) {
       //console.log("Key there" + key)
-      result = key;
+      return key;
     }
     
   }
