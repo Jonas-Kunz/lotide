@@ -16,17 +16,11 @@ const findKey = function(object, callback) {
 
   for (let key in object) {
 
-    if (!callback(object[key]/* is x */)) {
-      
-      continue;
-
-    } else {
-
-      keyOut += key;
+    if (callback(object[key]/* is x */)) {
+      keyOut = key;
       break;
-
     }
-
+     
   }
 
   return keyOut;
