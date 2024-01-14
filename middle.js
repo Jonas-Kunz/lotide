@@ -1,38 +1,8 @@
 
-
-//equal arrays
-const eqArrays = function(arr1, arr2) {
-
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-
-  return true;
-
-};
-// assertArraysEqual just calls eqArrays and prints the message from assert equal if true
-
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`🟢🟢🟢Assertion Passed: ${arr1} === ${arr2} `);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-
 // for array with one or two elements return empty array
 // for array with odd num of elements return single middle element
 // for even array return two middle elements
 
-   
-//console.log(oddOrEven(5));
 //checks for middle element(s) of array
 const middle = function(array) {
   // makes sure array is more than 2 and returns an empty array if NOT
@@ -56,16 +26,4 @@ const middle = function(array) {
 
 };
 
-// a litany of test cases storing my results so i can check it easier
-let result1 = middle([1,2,3,4,5,6]); // => [3,4]
-let result2 = middle([]); // => []
-let result3 = middle([1,2,3]); // => [2]
-
-assertArraysEqual(result1, [3,4]); // => true
-assertArraysEqual(result1, [3,5]); // => false
-
-assertArraysEqual(result2, []); // => true
-assertArraysEqual(result2, [3,4]); // => false
-
-assertArraysEqual(result3, [2]); // => true
-assertArraysEqual(result3, [3,4]); // => false
+module.exports = middle;
