@@ -12,7 +12,7 @@ const assertEqual = function(actual, expected) {
 
 const findKey = function(object, callback) {
   
-  let keyOut = "";
+  let keyOut;
 
   for (let key in object) {
 
@@ -41,4 +41,4 @@ const testObject = {
 
 assertEqual((findKey(testObject, x => x.stars === 2)), "noma"); // => "noma" =>pass
 assertEqual((findKey(testObject, x => x.stars === 1)), "Blue Hill"); // => "Blue Hill" =>pass
-assertEqual((findKey(testObject, x => x.stars === 0)), ""); // => "" => pass
+assertEqual((findKey(testObject, x => x.stars === 0)), undefined); // => "" => pass
