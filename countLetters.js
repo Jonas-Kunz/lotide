@@ -1,17 +1,4 @@
 // START //
-
-// assertEqual:
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢Assertion Passed: ${actual} === ${expected} `);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-// should take in string and return a count of each letter in that sentance
-// use countonly style to increment results
-
 // countLetters:
 const countLetters = function(stringIn) {
   // new object to put results in
@@ -35,23 +22,4 @@ const countLetters = function(stringIn) {
   return results;
 
 };
-
-
-//tests that I made overly complicated then had to redo
-const result1 = countLetters("aa bb cb");
-assertEqual(result1["a"], 2);
-assertEqual(result1["b"], 3);
-assertEqual(result1["c"], 1);
-
-const result2 = countLetters("");
-assertEqual(result2["a"], undefined);
-assertEqual(result2["b"], undefined);
-assertEqual(result2["c"], undefined);
-
-const result3 = countLetters("aA bb cb");
-assertEqual(result3["a"], 1);
-assertEqual(result3["b"], 3);
-assertEqual(result3["c"], 1);
-assertEqual(result3["A"], 1);
-
 
