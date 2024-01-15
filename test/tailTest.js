@@ -14,7 +14,7 @@ describe("#tail", () => {
     let testArr = [1,2];
     tail(testArr);
     assert.deepStrictEqual(testArr.length, 2)
-  })
+  });
 });
 
 
