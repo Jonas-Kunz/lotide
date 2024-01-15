@@ -1,7 +1,7 @@
 
-const assertEqual = require("../assertEqual")
-const assertArraysEqual = require("../assertArraysEqual");
-const tail = require("../tail");
+const assertEqual = require("../lib/assertEqual")
+const assertArraysEqual = require("../lib/assertArraysEqual");
+const tail = require("../lib/tail");
 
 const testArr = [1,2,3,4,5];
 const tailArr = tail(testArr);
