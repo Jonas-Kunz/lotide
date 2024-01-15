@@ -1,4 +1,4 @@
-const head = require("../lib/head");
+const {head} = require("../index");
 const {assert} = require("chai");
 
 describe("#head", () => {
