@@ -1,3 +1,4 @@
-const head = require("/home/labber/lotide/head")
+const head = require("../head")
+const assertEqual = require("../assertEqual")
 /////// test code //////
-console.log(head([1,2,3,4,5,6,7,8]));
+assertEqual((head([1,2,3,4,5,6,7,8])), 1);

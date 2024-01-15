@@ -1,4 +1,4 @@
-const middle = require("/home/labber/lotide/middle");
+const middle = require("../middle");
 /////// test code //////
 console.log(middle([1,2,3]));
 console.log(middle([1,2,3,4]));

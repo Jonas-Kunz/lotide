@@ -1,3 +1,3 @@
-const letterPositions = require("/home/labber/lotide/letterPositions");
+const letterPositions = require("../letterPositions");
 /////// test code //////
 console.log(letterPositions("Help"));
