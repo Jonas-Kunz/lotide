@@ -1,3 +1,3 @@
 const tail = require("/home/labber/lotide/tail");
 /////// test code //////
-console.log(findKeyByValue({1: "1", 2: "3"}, "3"))
+console.log(tail([1,2,3,4,5]));

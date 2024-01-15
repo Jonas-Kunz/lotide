@@ -1,3 +1,4 @@
 const eqObjects = require("/home/labber/lotide/eqObjects");
 /////// test code //////
-console.log(findKeyByValue({1: "1", 2: "3"}, "3"))
+console.log(eqObjects({1: "1", 2: "3"},{1: "1", 2: "3"} ));
+console.log(eqObjects({1: "1", 2: "3"},{1: "1", 2: "4"} ));

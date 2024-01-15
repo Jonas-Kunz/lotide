@@ -1,3 +1,4 @@
 const countOnly = require("/home/labber/lotide/countOnly");
 /////// test code //////
-console.log(findKeyByValue({1: "1", 2: "3"}, "3"))
+const words = ["Hello","GoodBye","Hello"];
+console.log(countOnly(words, {"Hello": true, "GoodBye": false}));

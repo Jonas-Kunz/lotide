@@ -1,3 +1,4 @@
 const countLetters = require("/home/labber/lotide/countLetters");
 /////// test code //////
-console.log(findKeyByValue({1: "1", 2: "3"}, "3"))
+console.log(countLetters("one two three"));
+console.log(countLetters("one"));
