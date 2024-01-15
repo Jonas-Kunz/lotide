@@ -2,6 +2,7 @@
 // counOnly function
 
 //definition:
+///////takes in array to count and object of items to count in format {"itemTocount": true/false}
 const countOnly = function(allItems, itemsToCount) {
   
   const results = {};
