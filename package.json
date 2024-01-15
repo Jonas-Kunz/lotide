@@ -1,0 +1,27 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "Lodash Clone",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "mocha"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonas-Kunz/lotide.git"
+  },
+  "author": "Jonas-Kunz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonas-Kunz/lotide/issues"
+  },
+  "homepage": "https://github.com/Jonas-Kunz/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^9.2.2"
+  }
+}
