@@ -43,3 +43,6 @@ The following functions are currently implemented:
 * `tail`: Returns all elements but the first of an array. Ex: `tail([1,2,3]) => [2,3]`
 * `takeUntil`: Returns elements from an array until a specified value. Ex: `takeUntil([1,2,3,4], x => x === 3) => [1,2,3]`
 * `without`: Returns array without specified elements. EX: `without([1,2,3,4,5,6,7], [4,5,6,7]) => [1,2,3]`
+
+## sources:
+Larry Assistance for getting over some logic issues, all my assistance requests relevent to lotide should be logged with Larry
